@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Emergency sent{% endblock title %}
+{% block body %}
+
+<div class="container" style="height:65%; max-width:100%">
+
+    <h1 style="color:rgb(217,48,37); text-align: center;"><b>EMERGENCY SITUATION!!</b></h1>
+    <h1 style="color:rgb(74,131,135); text-align: center;">Your location has been sent to your trusted contacts.</h1>
+    <h1 style="color:rgb(74,131,135); text-align: center;">Help is on the way.</h1>
+    <a href="{% url 'home' %}"><button
+            style="font-size: 50px; margin-left:auto;margin-right:auto;display:block;margin-top:10px;">Back</button></a>
+
+{% endblock body %}
+
+{% block footer %} {% endblock footer %}
