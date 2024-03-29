@@ -4,7 +4,7 @@ from .forms import UserRegisterForm, EmergencyContactForm
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import AuthenticationForm
-from .models import EmergencyContact
+from .models import EmergencyContact,User
 from .mail import send_email
 from .location import lat, log
 
@@ -50,8 +50,11 @@ def emergency(request):
 def emergencybutton(request):
     contacts = EmergencyContact.objects.filter(user=request.user)
     link = "http://www.google.com/maps/place/"+lat+","+log
+    email=[]
     for contact in contacts:
-        send_email(contact.first_name, contact.email, link)
+        email.append(contact.email)
+    for contact in contacts:
+        send_email(request.user.first_name, email, link)
     return render(request, 'emergencysent.html')
 
 

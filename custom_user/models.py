@@ -1,6 +1,5 @@
 from django_use_email_as_username.models import BaseUser, BaseUserManager
 from django.db import models
-from django.contrib.auth.models import AbstractUser
 
 class User(BaseUser):
     objects = BaseUserManager()
