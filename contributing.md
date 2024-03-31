@@ -9,40 +9,37 @@ To contribute to Suraksha Sakhi, please follow these steps:
 1. Fork the repository to your own GitHub account.
 2. Clone the forked repository to your local machine:
 
-    ```shell
-    git clone https://github.com/your-username/SurakshaSakhi.git
-    ```
+```shell
+ git clone https://github.com/your-username/SurakshaSakhi.git
+ ```
+
+2. Set up the development environment:
+```shell
+python -m venv .venv
+source .venv/bin/activate
+```
 
 3. Create a new branch for your changes:
 
-    ```shell
-    git checkout -b feature/your-feature
-    ```
+ ```shell
+git checkout -b feature/your-feature
+```
 
-4. Set up the development environment:
 
-    - Install the required dependencies by running the following command:
+4. Make your changes and test them locally.
 
-      ```shell
-      npm install
-      ```
+5. Commit your changes:
 
-    - Configure any necessary environment variables.
-
-5. Make your changes and test them locally.
-
-6. Commit your changes:
-
-    ```shell
-    git add .
-    git commit -m "Add your commit message here"
-    ```
+```shell
+git add .
+git commit -m "Add your commit message here"
+```
 
 7. Push your changes to your forked repository:
 
-    ```shell
-    git push origin feature/your-feature
-    ```
+ ```shell
+git push origin feature/your-feature
+```
 
 8. Open a pull request:
 
