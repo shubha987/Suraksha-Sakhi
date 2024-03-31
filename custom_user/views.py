@@ -43,6 +43,21 @@ def create_contact(request):
         form = EmergencyContactForm()
     return render(request, 'create_contact.html', {'form': form})
 
+def delete_contact(request, id):
+    contact = EmergencyContact.objects.get(id=id)
+    contact.delete()
+    return redirect('emergency')
+
+def update_contact(request, id):
+    contact = EmergencyContact.objects.get(id=id)
+    form = EmergencyContactForm(instance=contact)
+    if request.method == 'POST':
+        form = EmergencyContactForm(request.POST, instance=contact)
+        if form.is_valid():
+            form.save()
+            return redirect('emergency')
+    return render(request, 'create_contact.html', {'form': form})
+
 def emergency(request):
     contacts = EmergencyContact.objects.all()
     return render(request, 'emergency.html', {'contacts': contacts})
@@ -57,8 +72,14 @@ def emergencybutton(request):
         send_email(request.user.first_name, email, link)
     return render(request, 'emergencysent.html')
 
+def helpline(request):
+    return render(request, 'helpline.html')
 
+def womenlaws(request):
+    return render(request, 'womenlaws.html')
 
+def womenrights(request):
+    return render(request, 'womenright.html')
 
 @login_required(login_url='login')
 def home(request):

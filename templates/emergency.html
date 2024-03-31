@@ -37,6 +37,8 @@
                         <th>Zipcode</th>
                         <th>Country</th>
                         <th>Notes</th>
+                        <th>Update</th>
+                        <th>Delete</th>
                     </tr>
                 </thead>
 
@@ -54,6 +56,10 @@
                         <td>{{contact.zipcode}}</td>
                         <td>{{contact.country}}</td>
                         <td>{{contact.notes}}</td>
+                        <td><a style="color:white; background-color:rgb(26,115,232);" class="btn btn-sm btn-info"
+                                href="{% url 'update_contact' contact.id %}"><b>Update</b></a></td>
+                        <td><a style="color:white; background-color:rgb(217,48,37);" class="btn btn-sm btn-danger"
+                                href="{% url 'delete_contact' contact.id %}"><b>Delete</b></a></td>
                     </tr>
                 </tbody>
                 <br>
