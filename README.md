@@ -1,7 +1,7 @@
 # Suraksha Sakhi
 
 
-![banner](sakhi.png)
+![image-banner](surakshasakhi.png)
 
 Suraksha Sakhi is a project aimed at creating a safe and supportive environment for women. It provides a platform for women to connect with trusted individuals who can offer assistance and support in times of need.
 
