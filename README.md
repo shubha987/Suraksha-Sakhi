@@ -23,12 +23,17 @@ To run Suraksha Sakhi on your localhost, follow these steps:
     pip install -r requirements.txt
     ```
 
-4. Run the development server:
+4. Create a superuser:
+```bash
+python manage.py createsuperuser
+```
+
+5. Run the development server:
     ```bash
     python manage.py runserver
     ```
 
-5. Open your web browser and visit `http://localhost:8000` to access Suraksha Sakhi.
+6. Open your web browser and visit `http://localhost:8000` to access Suraksha Sakhi.
 
 ## Contributing
 
