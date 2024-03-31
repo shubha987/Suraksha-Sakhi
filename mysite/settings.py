@@ -40,9 +40,11 @@ INSTALLED_APPS = [
     'django_use_email_as_username.apps.DjangoUseEmailAsUsernameConfig',
     'custom_user.apps.CustomUserConfig',
     'crispy_forms',
+    "crispy_bootstrap5",
 ]
 
-CRISPY_TEMPLATE_PACK = 'bootstrap4'
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+CRISPY_TEMPLATE_PACK = "bootstrap5"
 AUTH_USER_MODEL = 'custom_user.User'
 
 MIDDLEWARE = [
@@ -130,5 +132,6 @@ STATICFILES_DIRS = [BASE_DIR / 'static']
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
 
 
