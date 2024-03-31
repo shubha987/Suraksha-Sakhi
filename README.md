@@ -8,32 +8,32 @@ Suraksha Sakhi is a project aimed at creating a safe and supportive environment 
 
 To run Suraksha Sakhi on your localhost, follow these steps:
 
-1.Fork this repository by clicking `fork` button in upper-right corner
+1. Fork this repository by clicking `fork` button in upper-right corner
 
 2. Clone the repository:
-    ```bash
-    git clone https://github.com/your-username/SurakshaSakhi.git
-    ```
+```bash
+git clone https://github.com/your-username/SurakshaSakhi.git
+```
 
 3. Navigate to the project directory:
-    ```bash
-    cd SurakshaSakhi/mysite
-    ```
+```bash
+cd SurakshaSakhi/mysite
+```
 
 4. Install the dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
+```bash
+pip install -r requirements.txt
+```
 
 5. Create a superuser:
-    ```bash
-    python manage.py createsuperuser
-    ```
+```bash
+python manage.py createsuperuser
+```
 
 6. Run the development server:
-    ```bash
-    python manage.py runserver
-    ```
+```bash
+python manage.py runserver
+```
 
 7. Open your web browser and visit `http://localhost:8000` to access Suraksha Sakhi.
 
